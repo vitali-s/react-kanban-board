@@ -23,7 +23,7 @@ class Card extends Component {
 
         if (this.state.showDetails) {
             cardDetails = (
-                <div className="card-details">
+                <div className='card-details'>
                     {this.props.description}
                     <CheckList cardId={this.props.id} tasks={this.props.tasks} />
                 </div>
@@ -31,7 +31,7 @@ class Card extends Component {
         }
         return (
             <div className="card" onClick={this.toggleDetails.bind(this)}>
-                <div className="card-title">{this.props.title}</div>
+                <div className={'card-title' + this.state.showDetails && ' card-title-is-open'}>{this.props.title}</div>
                 {cardDetails}
             </div>
         );

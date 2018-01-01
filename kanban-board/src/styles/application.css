@@ -72,11 +72,11 @@ ul {
 .card-title:before {
     display: inline-block;
     width: 1em;
-    content: ' ';
+    content: '▶';
 }
 
 .card-title-is-open:before {
-    content: ' ';
+    content: '▼';
 }
 
 .checklist-task:first-child {
@@ -88,5 +88,5 @@ ul {
 .checklist-task-remove:after {
     display: inline-block;
     color: #d66;
-    content: "X";
+    content: "❌";
 }

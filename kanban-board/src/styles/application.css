@@ -85,8 +85,26 @@ ul {
     border-top: dashed 1px #ddd;
 }
 
+.checklist-task-remove {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
 .checklist-task-remove:after {
     display: inline-block;
     color: #d66;
     content: "❌";
 }
+
+.checklist-task-remove:focus {
+    outline: none;
+}
+
+.checklist-add-task {
+    border: 1px dashed #bbb;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+  }

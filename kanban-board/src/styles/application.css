@@ -107,4 +107,26 @@ ul {
     padding: 10px;
     margin-top: 5px;
     border-radius: 3px;
-  }
+}
+
+.toggle-entering {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.toggle-entered {
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height .25s ease-in;
+}
+
+.toggle-exiting {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.toggle-exited {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-out;
+}
